@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 1200px;
+				margin: 0 auto;
+				background-image: url(05.jpg);
+				background-attachment: fixed;
+				background-repeat:no-repeat;
+				background-size: cover;
+				background-position: 10% 10%;
+			}
+			header{
+				/* background-image: url(bj01.jpg);
+				background-attachment: fixed;
+				background-repeat:no-repeat;
+				background-size: cover;
+				background-position: 10% 50%; */
+				height: 100px;
+				 /* background: orange; */
+				 position: relative;
+			}
+			#button input{
+				width: 180px;
+				height: 30px;
+				border: 1px solid #EEEEEE;
+				position: relative;
+				left: 900px;
+				top: -30px;
+				
+			}
+			#button button{
+				position: relative;
+				left: 900px;
+				top: -29px;
+				width: 50px;
+				height: 35px;
+				font-size: 14px;
+				color: black;
+				background: #EEEEEE;
+				border: 0;
+				border-radius:4px;
+			}
+			#title ,nav{
+				display: inline-block;
+			}
+			#title{
+				margin-left: 20px;
+				margin-top: 10px;
+			}
+			h1{
+				color: gray;
+				text-shadow: 2px 2px 2px lightgray;
+				opacity: 0.7;
+				letter-spacing: 15px;
+			}
+			i{
+				font-size: xx-small;
+				letter-spacing: 1px;
+			}
+			nav{
+				float: right;
+				margin-right: 30px;
+				margin-top: 20px;
+			}
+			nav ul li{
+				margin: 10px;
+				display: inline-block;
+			}
+			#box1{
+				position: absolute;
+				top: 5px;
+				left: 360px;
+			}
+			main{
+				height: 1800px;
+				/* background: gray; */
+				padding: 20px;
+				background-position: 10% 80%; */
+			}
+			main top{
+				width: 100%;
+				background: green;
+			}
+			main article{
+				width: 100%;
+				height: 1000px;
+				/* background: yellow; */
+				margin-top: 5px;
+				display: inline-block0
+			}
+			main left{
+				width: 63%;
+				height: 100%;
+				/* background: lightcoral; */
+				display: inline-block;
+			}
+			main right{
+				width: 37%;
+				height: 100%;
+				/* background: lavender; */
+				display: inline-block;
+				float: right;
+			}
+			main bottom{
+				/* background: #008000; */
+				width: 1150px;
+				height: 280px;
+				margin: 10px;
+				display: inline-block;
+			}
+			#box2 .summary{
+				height: 240px;
+				margin: 10px;
+				background: #f8f2ec;
+				position: relative;
+			}
+			#box2 .summary div:first-child{
+				width: 60%;
+				height: 100%;
+				display: inline-block;
+				position: absolute;
+				left: 230px;
+			}
+			#box2 h2{
+				position: absolute;
+				top: 40px;
+				left: 10px;
+				font-size: 35px;
+				font-family: Georgia, 'Times New Roman', Times, serif;
+			}
+			#box2 .aa p{
+				font-size: xx-small;
+				position: absolute;
+				top: 140px;
+				left: 20px;
+			}
+			#box2 .summary div:last-child{
+				width: 30%;
+				height: 100%;
+				margin: 20px;
+				display: inline-block;
+				float: right;
+				}
+			#box3 .summary{
+				height: 240px;
+				margin: 10px;
+				background: #d9af89;
+				position: relative;
+			}	
+			#box3 .summary div:first-child{
+						width: 60%;
+						height: 100%;
+						display: inline-block;
+						position: absolute;
+						left: 150px;
+						float: right;
+					}
+					#box3 h2{
+						position: absolute;
+						top: 40px;
+						right: 50px;
+						font-size: 35px;
+						font-family: Georgia, 'Times New Roman', Times, serif;
+					}
+					#box3 .bb p{
+						font-size: xx-small;
+						position: absolute;
+						right: 10px;
+						top: 140px;
+					}
+			#box3 .summary div:last-child{
+						width: 30%;
+						height: 100%;
+						display: inline-block;
+						margin-left: 10px;
+						margin-top: 20px;
+						}		
+			#box4 .summary{
+				height: 240px;
+				margin: 10px;
+				background: #e6b485;
+				position: relative;
+			}
+			#box4 .summary div:first-child{
+				width: 60%;
+				height: 100%;
+				display: inline-block;
+				position: absolute;
+				left: 190px;
+			}
+			#box4 h2{
+				position: absolute;
+				top: 40px;
+				left: 10px;
+				font-size: 35px;
+				font-family: Georgia, 'Times New Roman', Times, serif;
+			}
+			#box4 .cc p{
+				font-size: xx-small;
+				position: absolute;
+				left: 20px;
+				top: 140px;
+			}
+			#box4 .summary div:last-child{
+						width: 30%;
+						height: 100%;
+						display: inline-block;
+						float: right;
+						}
+ 				#box4 h4{
+					text-align: right;
+					margin-right: 10px;
+				} 
+			#box5 .summary{
+				height: 240px;
+				margin: 10px;
+				background: #c9bdb0;
+				position: relative;
+			}			
+			#box5 .summary div:first-child{
+						width: 60%;
+						height: 100%;
+						display: inline-block;
+						position: absolute;
+						left: 220px;
+					}
+					#box5 h2{
+						position: absolute;
+						font-size: 35px;
+						top: 40px;
+						right: 50px;
+						font-family: Georgia, 'Times New Roman', Times, serif;
+					}						
+					#box5 .dd p{
+					font-size: xx-small;
+						position: absolute;
+						right: 10px;
+						top: 140px;
+					}
+			#box5 .summary div:last-child{
+						width: 30%;
+						height: 100%;
+						display: inline-block;
+						margin-left: 10px;
+					}
+					#box6 h5{
+						
+						border-top:5px solid darkgray;
+						}
+			 #box6 .one{
+						 width: 150px;
+						 height: 200px;
+						 background: #eeeeee;
+						 margin: 30px;
+						 padding: 10px;
+					 }
+			#box6 .one:hover{
+				cursor: pointer;
+				box-shadow: 0.5px 30px -10px gray;
+				transition: 0.5s;
+				transform:scale(1.2);
+					}
+			#box6 .two{
+					 	width: 150px;
+					 	height: 200px;
+					 	background: #EEEEEE;
+						float: right;
+						margin: -220px 30px 0px 20px;
+						padding: 10px;
+					 					 }
+			#box6 .two:hover{
+				cursor: pointer;
+				box-shadow: 0.5px 30px -10px gray;
+				transition: 0.5s;
+				transform:scale(1.2);
+					}
+					b,span
+					{
+						font-size: xx-small;
+					}
+					b{
+						margin: 5px;
+					}
+					u{
+						float: right;
+						margin: 1px;
+					}
+					#box6 .three{
+									width: 150px;
+									height: 200px;
+									background: #eeeeee;
+									margin: 30px;
+									padding: 10px;
+										 }
+					#box6 .three:hover{
+						cursor: pointer;
+						box-shadow: 0.5px 30px -10px gray;
+						transition: 0.5s;
+						transform:scale(1.2);
+							}
+					#box6 .four{
+								width: 150px;
+								height: 200px;
+								background: #EEEEEE;
+								float: right;
+								margin: -220px 30px 0px 20px;
+								padding: 10px;
+									 					 }
+						#box6 .four:hover{
+							cursor: pointer;
+							box-shadow: 0.5px 30px -10px gray;
+							transition: 0.5s;
+							/* transform:translateY(-5px); */
+							transform:scale(1.2);
+								}
+					.content-form{
+									margin-top: 2px;
+									padding: 5px;
+									display: inline-block;
+					        }
+					.content-form form{
+										background: #F8F8F8;
+										padding: 10px;
+										border-radius: 3px;
+					        }
+					.content-form-title{
+										padding: 10px 10px;
+										border-bottom: 2px solid #eee;
+					        }
+					.form-control{
+						margin: 5px;
+					}
+					#box6 .gg{
+						position: relative;
+						display: inline-block;
+					}
+					.pi{
+						position: absolute;
+						top: 60px;
+						right: -200px;
+						display: inline-block;
+						
+					}
+					#box7 .one{
+						height: 200px;
+						width: 100%;
+						/* background: deeppink; */
+						display: inline-block;
+					}
+					#box7 .two{
+						height: 80px;
+						width: 100%;
+						/* background: mediumblue; */
+						display: inline-block;
+						position: relative;
+					}
+					#box7 .m{
+						height: 100%;
+						width: 19%;
+						/* background: saddlebrown; */
+						display: inline-block;
+						margin-left: 6px;
+						position: relative;
+					}
+					#box7 .n{
+						position: absolute;
+						top: 60px;
+						left: 60px;
+					}
+					.ph1{
+						position: absolute;
+						right: 260px;
+					}
+					.ph2{
+						position: absolute;
+						right: 160px;
+					}
+					.ph3{
+						position:absolute;
+						right: 60px;
+					}
+			footer{
+				height: 80px;
+				/* background:red; */
+				position: relative;
+				/* border: 10px solid rgba(201,189,176,0.9); */
+				/* opacity: 0.5; */
+			}
+			#box8 .end h3{
+				position: absolute;
+				top: 10px;
+				left: 250px;
+				text-shadow: 1px 1px 1px lightgray;
+			}
+			#box8 .end h4{
+				position: absolute;
+				top: 30px;
+				left: 300px;
+				text-shadow: 1px 1px 1px lightgray;
+			}
+			#box8 .end p{
+				position:absolute ;
+				top: 50px;
+				left: 450px;
+				text-shadow: 1px 1px 1px lightgray;
+				font-weight: bold;
+			}
+			#box8 button{
+				position: absolute;
+				top: 20px;
+				right: 40px;
+				width: 100px;
+				height: 40px;
+				font-size: 14px;
+				/* color: black; */
+				background: #EEEEEE;
+				border: outset;
+				outline: none;
+				border-radius:4px;
+			}
+			#box8 .ee{
+				width: 80px;
+				height: 80px;
+				margin-top: 10px;
+				/* background: saddlebrown; */
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="title">
+				<h1>萌宠不流浪</h1>
+				<p>愿每一只毛孩子都能温暖过冬</p>
+				<i>Wish every warm winter for you</i>
+				<div id="button">
+				<input/><button>搜索</button>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li>首页</li>
+					<li>领养屋</li>
+					<li>筹粮屋</li>
+					<li>关于我们</li>
+				</ul>
+			</nav>
+			<div id="box1">
+				<div align="center">
+					<img src="ccc.png" width="30%"height="30%">
+				</div>
+			</div>
+		</header>
+		<main>
+			<top>
+				<section id="top">
+					<video src="202000.MP4" controls width=100%; height="100%" autoplay muted loop>
+					</video>
+				</section>
+			</top>
+			<article>
+				<left>				
+					<section id="box2">
+					<div class="summary">
+						<div>
+							<img src="01.png" height="240px">
+						</div>
+						<div class="aa">
+						<h2 style="border-left:5px solid cadetblue;">ADOPT.<br>DOT' SHOP.</h2>
+						<p>Open your doors and herts to pets in <br> need of home and it will be thankful <br>to you for the rest of their lives.</p>
+						</div>
+						<div>
+							<h3>拒绝遗弃</h3>
+							<p style="border: 5px solid brown;font-family: cursive; border-radius: 10%;">
+								一旦收养了它，请不要遗弃它。流浪猫狗背后,大都有一个不负责的主人。它是你生命的一部分,而你是它生命的全部。
+							</p>
+					</div>
+				</section>
+					<section id="box3">
+					<div class="summary">
+						<div>
+							<img src="02.png" height="240px">
+						</div>
+						<div class="bb">
+						<h2 style="border-left: 5px solid cadetblue;">WARMTH~<br>GIVE A HOME.</h2>
+						<p>When it's rainy we go inside, but there's no place for <br>them to go. You also want to be in a warm place and <br>sleep comfortably. 
+</p>
+						</div>
+						<div>
+							<h4>我想有个家</h4>
+							<p style="border: 5px solid brown;font-family: cursive; border-radius: 5%;">流浪的它们渴望有个不太冷的家!它们努力在这个城市的夹缝中生存……多么希望像其他同伴一样,有一个有爱有欢笑的家。
+</p>
+						</div>
+					</div>
+				</section>
+					<section id="box4">
+					<div class="summary">
+						<div>
+							<img src="00.png" height="240px">
+						</div>
+						<div class="cc">
+						<h2 style="border-left: 5px solid cadetblue;">THEY NEED.<br>YOUR LOVE ♥</h2>
+						<p>Today everyone can help they and make their <br>lives better.Let us reach out, leave a love, keep a <br>life.</p>
+						</div>
+						<div>
+							<h3>暖冬守护</h3>
+							<p style="border: 5px solid brown;font-family: cursive; border-radius: 10%;">
+							寒风凛冽的冬季,愿更多毛孩子能过上一个温暖的冬天,流浪动物守护活动,用我们的小小力量为它们筹集暖冬保护站和过冬口粮～
+							</p>
+						</div>
+					</div>
+					</section>
+					<section id="box5">
+					<div class="summary">
+						<div>
+							<img src="04.png" height="240px">
+						</div>
+						<div class="dd">
+						<h2 style="border-left: 5px solid cadetblue;">SVAING #<br>CHANG LIFES.</h2>
+							<p>Redemption for them is redemption for ourselves, <br> Their fate will be changed by you and make the wo <br> rld better for you</p>
+						</div>
+						<div>
+							<h4>因你而美好</h4>
+							<p
+							style="border: 5px solid brown;font-family: cursive; border-radius: 5%;">它们不懂伤害别人却懂得感恩你的施舍对你搭耳摇尾，你的一个恻隐之心会拯救一个垂危的生命，请携手，让爱，生生不息！
+							</p>
+						</div>
+					</div>
+				</section>
+				</left>
+				<right>
+						<u>查看更多</u>
+						<section id="box6">
+							<div class="one">
+								<div align="center">
+								<img src="01.jpg" width="150" height="100">
+								</div>
+							<div>
+								<h5>努力</h5>
+								<b>性别:</b><span>男孩</span>
+								<b>年龄:</b><span>一岁</span>
+								<br>
+								<b>疫苗:</b><span>七联</span>
+								<b>驱虫:</b><span>已驱虫</span>
+								<br>
+								<b>性格:</b><span>超级温顺，自信心不足</span>
+							</div>
+							</div>
+							<div class="two">
+								<div>
+								<img src="02.jpg" width="150" height="100">
+								</div>
+								<div>
+									<h5>小雪</h5>
+									<b>性别:</b><span>女孩</span>
+									<b>年龄:</b><span>六个月</span>
+									<br>
+									<b>疫苗:</b><span>三联</span>
+									<b>驱虫:</b><span>已驱虫</span>
+									<br>
+									<b>性格:</b><span>活泼粘人，好奇心强</span>
+								</div>
+							</div>
+							<div class="one">
+								<div>
+								<img src="aa.jpg" width="150" height="100">
+								</div>
+								<div>
+									<h5>可乐</h5>
+									<b>性别:</b><span>男孩</span>
+									<b>年龄:</b><span>2岁</span>
+									<br>
+									<b>疫苗:</b><span>七联</span>
+									<b>驱虫:</b><span>已驱虫</span>
+									<br>
+									<b>性格:</b><span>体力充沛，安全感优</span>
+								</div>
+							</div>
+							<div class="two">
+								<div>
+								<img src="03.jpg" width="150" height="100">
+								</div>
+								<div>
+									<h5>黑米</h5>
+									<b>性别:</b><span>男孩</span>
+									<b>年龄:</b><span>两岁</span>
+									<br>
+									<b>疫苗:</b><span>三联</span>
+									<b>驱虫:</b><span>已驱虫</span>
+									<br>
+									<b>性格:</b><span>待人友好，极其聪明</span>
+								</div>
+							</div>
+							<div class="three">
+								<div>
+								<img src="cc.jpg" width="150" height="100">
+								</div>
+								<div>
+									<h5>Lucky</h5>
+									<b>性别:</b><span>女孩</span>
+									<b>年龄:</b><span>一岁</span>
+									<br>
+									<b>疫苗:</b><span>七联</span>
+									<b>驱虫:</b><span>已驱虫</span>
+									<br>
+									<b>性格:</b><span>极易训练，自信冷静</span>
+								</div>
+							</div>
+								<div class="four">
+									<div>
+									<img src="bb.jpg" width="150px" height="100px">
+									</div>
+									<div>
+										<h5>嘟嘟</h5>
+										<b>性别:</b><span>女孩</span>
+										<b>年龄:</b><span>三岁</span>
+										<br>
+										<b>疫苗:</b><span>三联</span>
+										<b>驱虫:</b><span>已驱虫</span>
+										<br>
+										<b>性格:</b><span>胆小贪睡，轻微洁癖</span>
+									</div>
+							</div>
+							<div>
+								<form class="gg">
+								 <h4 class="content-form-title">志愿者申请</h4>
+									<div>
+									    <label>申请</label>
+									    <input type="text" class="form-control" id="name"  placeholder="申请内容">
+									</div>
+								    <div>
+								        <label for="name">姓名</label>
+								        <input type="text" class="form-control" id="name"  placeholder="请输入姓名">
+								    </div>
+									<div>
+									    <label for="age">年龄</label>
+									    <input type="text" class="form-control" id="age"  placeholder="请输入年龄">
+									</div>
+									<div>
+									    <label for="age">性别</label>
+									    <input type="text" class="form-control" id="age"  placeholder="请输入性别">
+									</div>
+								    <div>
+								        <label for="title">邮箱</label>
+								        <input type="email" class="form-control" id="email"  placeholder="请输入邮箱">
+								    </div>
+								    <div>
+								        <button type="submit" class="btn btn-primary" style="border: 5px solid #EEEEEE;">提交</button>
+								        <button type="button" class="btn btn-outline-secondary" style="border: 5px solid #EEEEEE;">重置</button>
+								    </div>
+								<div class="pi">
+									<img src="pi.png"width="200px" height="80px">
+								</div>
+							</div>
+							</form>
+						</div>
+							</bottom>
+						</section>
+					</right>
+			</article>
+			<bottom id="box7">
+			<up class="one">
+				<one class="m">
+				<div class="n">
+					<h3>🎓知识</h3>
+					<li>如何收养</li>
+					<li>如何救治</li>
+					<li>如何保护</li>
+				</div>
+				</one>
+				<two class="m">
+				<div class="n">
+					<h3>🔈活动</h3>
+					<li>公益宣传</li>
+					<li>知识讲座</li>
+					<li>主题活动</li>
+				</div>
+				</two>
+				<three class="m">
+				<div class="n">
+					<h3>🖋记录</h3>
+					<li>流浪记录</li>
+					<li>爱心记录</li>
+					<li>平台记录</li>
+				</div>
+				</three>
+				<four class="m">
+				<div class="n">
+					<h3>💻网站</h3>
+					<li>在线留言</li>
+					<li>社交平台</li>
+					<li>友情链接</li>
+				</div>
+				</four>
+				<five class="m">
+				<div class="n">
+					<h3>📻平台</h3>
+					<li>注册平台</li>
+					<li>登录平台</li>
+					<li>捐助平台</li>
+				</div>
+				</five>
+			</up>
+			<down class="two">
+				<div class="ph1">
+					<a href="https://weibo.com/#_loginLayer_1609589165784">
+					<img src="wb.png" width="80" height="80" >
+					</a>
+						
+				</div>
+				<div class="ph2">
+					<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&redirect_uri=http%3A%2F%2Fspcdp.cdposs.qq.com%2Fauth%2Fcallback&client_id=101477813&state=http%3A%2F%2Fspcdp.cdposs.qq.com%2F">
+						<img src="QQ.png" width="80" height="80" >
+					</a>
+				</div>
+				<div class="ph3">
+					<a href="https://wx.qq.com/">
+					<img src="wx.png" width="80" height="80">
+					</a>
+				</div>
+			</down>
+		</main>
+		<footer>
+			<div id="box8">
+				<div class="end">
+					<div class="ee">
+					<img src="11.png"width="100%"height="100%">
+					</div>
+			<h3>让公益像</h3>
+			<h4>阳光+空气一样触手可及</h4>
+			<p>我们期待，通过网络的力量，让天下不再有饿死的毛孩子</p>
+			<!-- <input/><button>加入我们</button> -->
+			<button>加入我们</button>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
